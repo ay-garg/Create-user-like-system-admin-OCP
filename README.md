@@ -10,7 +10,7 @@
 # openssl req -new -key ayush.key -out ayush.csr -subj "/O=system:masters/O=system:cluster-admins/CN=ayush"
 ```
 
-## Create an extension file conatining required x509 extensions
+## Create an extension file containing required x509 extensions
 ```
 # cat extension.ext 
 keyUsage             = critical,digitalSignature,keyEncipherment
