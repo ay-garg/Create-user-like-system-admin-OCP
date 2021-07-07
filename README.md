@@ -20,7 +20,7 @@ basicConstraints     = critical,CA:false
 
 ## Sign the CSR with /etc/origin/master/ca.crt
 ```
-# openssl x509 -req -in ayush.csr -CA /etc/origin/master/ca.crt -CAkey /etc/origin/master/ca.key -CAcreateserial -out ayush.crt -days 730 -sha256 -extfile extension.ext
+# openssl x509 -req -in ayush.csr -CA /etc/origin/master/ca.crt -CAkey /etc/origin/master/ca.key -CAcreateserial -out ayush.crt -days 365 -sha256 -extfile extension.ext
 ```
 
 ## Encode the certificate in base64 format without line wrapping(keep content in single line)
